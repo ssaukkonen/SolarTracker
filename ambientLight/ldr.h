@@ -13,6 +13,12 @@ class LDR {
 		int ldrPinRight = A1;
 		readLDR();
 		diffLDR();
-		giveDirection();
+		giveDirection(); // public?
+		int leftLDRStatus;
+		int rightLDRStatus
+		int leftLDR;
+		int rightLDR;
+		int diff;
+		char direction;
 };
 #endif

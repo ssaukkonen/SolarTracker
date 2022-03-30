@@ -29,14 +29,14 @@ void Servomoottori::moveServo(char direction){
 	switch(direction) {
   case "left":
     for (int i = 0; i <= 10; i = i++) {
-		curPos(i);
+		curPos = curPos + i;
 		servo1.write(curPos);
 		delay(15);
 	}
     break;
   case "right":
-    for (int i = 0; i <= -10; i = i--) {
-		curPos(i);
+    for (int i = 0; i >= -10; i = i--) {
+		curPos = curPos + i;
 		servo1.write(curPos);
 		delay(15);
 	}
@@ -50,14 +50,14 @@ void Servomoottori::moveServo(char direction){
 void Servomoottori::moveServo(char direction){
 	if direction == "left"{
 		for (int i = 0; i <= 10; i = i++) {
-		curPos(i);
+		curPos = curPos + i;
 		servo1.write(curPos);
 		delay(15);
 		}
 	}
 	else if direction == "right"{
 		for (int i = 0; i <= 10; i = i++) {
-		curPos(i);
+		curPos = curPos - i;
 		servo1.write(curPos);
 		delay(15);
 		}

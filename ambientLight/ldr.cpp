@@ -21,7 +21,7 @@ LDR::diffLDR(int leftLDRStatus,int rightLDRStatus){
 LDR::giveDirection(int diff){	
 	int diff = diff;				//tämä kans oikein
 	char direction = "";		//onko liian pythonia
-	if diff > jokuarvo{			//pitää vielä järkeillä kaikki vaihtoehdot
+	if diff > jokuarvo{			//pitää vielä järkeillä kaikki vaihtoehdot ja keksiä arvot
 		direction = "right";
 		return direction;
 	}
