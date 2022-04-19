@@ -9,10 +9,10 @@ class LDR {
 		void beginLDR();
 	private:
 		int i;
-		int ldrPinLeft = A0; //nämä oikein
-		int ldrPinRight = A1;
-		readLDR();
-		diffLDR();
+		int ldrPinLeft = A3; //nämä oikein
+		int ldrPinRight = A2;
+		void readLDR();
+		void diffLDR();
 		giveDirection(); // public?
 		int leftLDRStatus;
 		int rightLDRStatus

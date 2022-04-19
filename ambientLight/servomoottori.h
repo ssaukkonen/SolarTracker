@@ -8,9 +8,12 @@ class Servomoottori {
 		Servomoottori();
 		void beginServo();
 		void setServo(int);
+		void manualServo(int);
 		int position1;
+		int CurPos;		
 	private:
 		Servo servo1;
-		int curPos;
+		int angleDiff;
+		int desiredAngle;
 };
 #endif
